@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE01CB812658FF070011EC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB802658FF070011EC40 /* AppDelegate.swift */; };
+		BE01CB832658FF070011EC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB822658FF070011EC40 /* SceneDelegate.swift */; };
+		BE01CB852658FF070011EC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB842658FF070011EC40 /* ViewController.swift */; };
+		BE01CB882658FF070011EC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CB862658FF070011EC40 /* Main.storyboard */; };
+		BE01CB8B2658FF070011EC40 /* SMS2CDC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB892658FF070011EC40 /* SMS2CDC.xcdatamodeld */; };
+		BE01CB8D2658FF090011EC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE01CB8C2658FF090011EC40 /* Assets.xcassets */; };
+		BE01CB902658FF090011EC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CB8E2658FF090011EC40 /* LaunchScreen.storyboard */; };
+		BE01CB9B2658FF0A0011EC40 /* SMS2CDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB9A2658FF0A0011EC40 /* SMS2CDCTests.swift */; };
+		BE01CBA62658FF0A0011EC40 /* SMS2CDCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBA52658FF0A0011EC40 /* SMS2CDCUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE01CB972658FF0A0011EC40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE01CB752658FF070011EC40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE01CB7C2658FF070011EC40;
+			remoteInfo = SMS2CDC;
+		};
+		BE01CBA22658FF0A0011EC40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE01CB752658FF070011EC40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE01CB7C2658FF070011EC40;
+			remoteInfo = SMS2CDC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE01CB7D2658FF070011EC40 /* SMS2CDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS2CDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01CB802658FF070011EC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE01CB822658FF070011EC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE01CB842658FF070011EC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE01CB872658FF070011EC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE01CB8A2658FF070011EC40 /* SMS2CDC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SMS2CDC.xcdatamodel; sourceTree = "<group>"; };
+		BE01CB8C2658FF090011EC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE01CB8F2658FF090011EC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE01CB912658FF090011EC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE01CB962658FF0A0011EC40 /* SMS2CDCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS2CDCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01CB9A2658FF0A0011EC40 /* SMS2CDCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMS2CDCTests.swift; sourceTree = "<group>"; };
+		BE01CB9C2658FF0A0011EC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE01CBA12658FF0A0011EC40 /* SMS2CDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS2CDCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE01CBA52658FF0A0011EC40 /* SMS2CDCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMS2CDCUITests.swift; sourceTree = "<group>"; };
+		BE01CBA72658FF0A0011EC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE01CB7A2658FF070011EC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB932658FF0A0011EC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB9E2658FF0A0011EC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE01CB742658FF070011EC40 = {
+			isa = PBXGroup;
+			children = (
+				BE01CB7F2658FF070011EC40 /* SMS2CDC */,
+				BE01CB992658FF0A0011EC40 /* SMS2CDCTests */,
+				BE01CBA42658FF0A0011EC40 /* SMS2CDCUITests */,
+				BE01CB7E2658FF070011EC40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE01CB7E2658FF070011EC40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE01CB7D2658FF070011EC40 /* SMS2CDC.app */,
+				BE01CB962658FF0A0011EC40 /* SMS2CDCTests.xctest */,
+				BE01CBA12658FF0A0011EC40 /* SMS2CDCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE01CB7F2658FF070011EC40 /* SMS2CDC */ = {
+			isa = PBXGroup;
+			children = (
+				BE01CB802658FF070011EC40 /* AppDelegate.swift */,
+				BE01CB822658FF070011EC40 /* SceneDelegate.swift */,
+				BE01CB842658FF070011EC40 /* ViewController.swift */,
+				BE01CB862658FF070011EC40 /* Main.storyboard */,
+				BE01CB8C2658FF090011EC40 /* Assets.xcassets */,
+				BE01CB8E2658FF090011EC40 /* LaunchScreen.storyboard */,
+				BE01CB912658FF090011EC40 /* Info.plist */,
+				BE01CB892658FF070011EC40 /* SMS2CDC.xcdatamodeld */,
+			);
+			path = SMS2CDC;
+			sourceTree = "<group>";
+		};
+		BE01CB992658FF0A0011EC40 /* SMS2CDCTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE01CB9A2658FF0A0011EC40 /* SMS2CDCTests.swift */,
+				BE01CB9C2658FF0A0011EC40 /* Info.plist */,
+			);
+			path = SMS2CDCTests;
+			sourceTree = "<group>";
+		};
+		BE01CBA42658FF0A0011EC40 /* SMS2CDCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE01CBA52658FF0A0011EC40 /* SMS2CDCUITests.swift */,
+				BE01CBA72658FF0A0011EC40 /* Info.plist */,
+			);
+			path = SMS2CDCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE01CB7C2658FF070011EC40 /* SMS2CDC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE01CBAA2658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDC" */;
+			buildPhases = (
+				BE01CB792658FF070011EC40 /* Sources */,
+				BE01CB7A2658FF070011EC40 /* Frameworks */,
+				BE01CB7B2658FF070011EC40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMS2CDC;
+			productName = SMS2CDC;
+			productReference = BE01CB7D2658FF070011EC40 /* SMS2CDC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE01CB952658FF0A0011EC40 /* SMS2CDCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE01CBAD2658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDCTests" */;
+			buildPhases = (
+				BE01CB922658FF0A0011EC40 /* Sources */,
+				BE01CB932658FF0A0011EC40 /* Frameworks */,
+				BE01CB942658FF0A0011EC40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE01CB982658FF0A0011EC40 /* PBXTargetDependency */,
+			);
+			name = SMS2CDCTests;
+			productName = SMS2CDCTests;
+			productReference = BE01CB962658FF0A0011EC40 /* SMS2CDCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE01CBA02658FF0A0011EC40 /* SMS2CDCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE01CBB02658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDCUITests" */;
+			buildPhases = (
+				BE01CB9D2658FF0A0011EC40 /* Sources */,
+				BE01CB9E2658FF0A0011EC40 /* Frameworks */,
+				BE01CB9F2658FF0A0011EC40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE01CBA32658FF0A0011EC40 /* PBXTargetDependency */,
+			);
+			name = SMS2CDCUITests;
+			productName = SMS2CDCUITests;
+			productReference = BE01CBA12658FF0A0011EC40 /* SMS2CDCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE01CB752658FF070011EC40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BE01CB7C2658FF070011EC40 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					BE01CB952658FF0A0011EC40 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BE01CB7C2658FF070011EC40;
+					};
+					BE01CBA02658FF0A0011EC40 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BE01CB7C2658FF070011EC40;
+					};
+				};
+			};
+			buildConfigurationList = BE01CB782658FF070011EC40 /* Build configuration list for PBXProject "SMS2CDC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE01CB742658FF070011EC40;
+			productRefGroup = BE01CB7E2658FF070011EC40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE01CB7C2658FF070011EC40 /* SMS2CDC */,
+				BE01CB952658FF0A0011EC40 /* SMS2CDCTests */,
+				BE01CBA02658FF0A0011EC40 /* SMS2CDCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE01CB7B2658FF070011EC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01CB902658FF090011EC40 /* LaunchScreen.storyboard in Resources */,
+				BE01CB8D2658FF090011EC40 /* Assets.xcassets in Resources */,
+				BE01CB882658FF070011EC40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB942658FF0A0011EC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB9F2658FF0A0011EC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE01CB792658FF070011EC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01CB852658FF070011EC40 /* ViewController.swift in Sources */,
+				BE01CB812658FF070011EC40 /* AppDelegate.swift in Sources */,
+				BE01CB832658FF070011EC40 /* SceneDelegate.swift in Sources */,
+				BE01CB8B2658FF070011EC40 /* SMS2CDC.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB922658FF0A0011EC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01CB9B2658FF0A0011EC40 /* SMS2CDCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE01CB9D2658FF0A0011EC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE01CBA62658FF0A0011EC40 /* SMS2CDCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE01CB982658FF0A0011EC40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE01CB7C2658FF070011EC40 /* SMS2CDC */;
+			targetProxy = BE01CB972658FF0A0011EC40 /* PBXContainerItemProxy */;
+		};
+		BE01CBA32658FF0A0011EC40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE01CB7C2658FF070011EC40 /* SMS2CDC */;
+			targetProxy = BE01CBA22658FF0A0011EC40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE01CB862658FF070011EC40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01CB872658FF070011EC40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE01CB8E2658FF090011EC40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE01CB8F2658FF090011EC40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE01CBA82658FF0A0011EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE01CBA92658FF0A0011EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE01CBAB2658FF0A0011EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE01CBAC2658FF0A0011EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE01CBAE2658FF0A0011EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMS2CDC.app/SMS2CDC";
+			};
+			name = Debug;
+		};
+		BE01CBAF2658FF0A0011EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMS2CDC.app/SMS2CDC";
+			};
+			name = Release;
+		};
+		BE01CBB12658FF0A0011EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMS2CDC;
+			};
+			name = Debug;
+		};
+		BE01CBB22658FF0A0011EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DR6QZ9TL24;
+				INFOPLIST_FILE = SMS2CDCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SMS2CDC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE01CB782658FF070011EC40 /* Build configuration list for PBXProject "SMS2CDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01CBA82658FF0A0011EC40 /* Debug */,
+				BE01CBA92658FF0A0011EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE01CBAA2658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01CBAB2658FF0A0011EC40 /* Debug */,
+				BE01CBAC2658FF0A0011EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE01CBAD2658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01CBAE2658FF0A0011EC40 /* Debug */,
+				BE01CBAF2658FF0A0011EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE01CBB02658FF0A0011EC40 /* Build configuration list for PBXNativeTarget "SMS2CDCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE01CBB12658FF0A0011EC40 /* Debug */,
+				BE01CBB22658FF0A0011EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE01CB892658FF070011EC40 /* SMS2CDC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE01CB8A2658FF070011EC40 /* SMS2CDC.xcdatamodel */,
+			);
+			currentVersion = BE01CB8A2658FF070011EC40 /* SMS2CDC.xcdatamodel */;
+			path = SMS2CDC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE01CB752658FF070011EC40 /* Project object */;
+}
