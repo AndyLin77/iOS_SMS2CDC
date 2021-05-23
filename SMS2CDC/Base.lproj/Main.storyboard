@@ -1,24 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bcJ-3b-6AL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--場所清單-->
+        <scene sceneID="vt6-Hl-cIq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="xQ3-Za-81X" customClass="PlaceListTableViewController" customModule="SMS2CDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HgU-iK-XXq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PlaceListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaceListCell" rowHeight="80" id="93b-iH-mp1" customClass="PlaceListTableViewCell" customModule="SMS2CDC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="93b-iH-mp1" id="STN-OC-fak">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-zC-jjl">
+                                            <rect key="frame" x="16" y="23" width="124.5" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="y2V-zC-jjl" firstAttribute="leading" secondItem="STN-OC-fak" secondAttribute="leadingMargin" id="HHJ-xN-len"/>
+                                        <constraint firstItem="y2V-zC-jjl" firstAttribute="centerY" secondItem="STN-OC-fak" secondAttribute="centerY" id="KAH-WH-dwN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="y2V-zC-jjl" id="sxd-iW-imC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xQ3-Za-81X" id="r3q-hY-kML"/>
+                            <outlet property="delegate" destination="xQ3-Za-81X" id="zf1-gH-jSR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="場所清單" id="wPK-3q-mfv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="2Wu-ho-NHD">
+                            <connections>
+                                <segue destination="l9p-8z-d9g" kind="show" id="vFi-r3-c6U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mde-Ol-fUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1084" y="131.78410794602701"/>
+        </scene>
+        <!--新增場所-->
+        <scene sceneID="MKD-Au-7QR">
+            <objects>
+                <viewController id="l9p-8z-d9g" customClass="AddNewPlaceControllerViewController" customModule="SMS2CDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHv-wp-VjR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-VK-lEC">
+                                <rect key="frame" x="10" y="69" width="355" height="336.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2b8-kG-25Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="75.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場所名稱：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z23-Oq-BJ6">
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yoz-pn-CnX">
+                                                <rect key="frame" x="0.0" y="37" width="355" height="38.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="355" id="Gra-Pa-2lE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TU0-GO-dvs">
+                                        <rect key="frame" x="0.0" y="95.5" width="355" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="355" id="hV6-mx-K19"/>
+                                            <constraint firstAttribute="height" constant="180" id="l6T-lq-37n"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-NT-0lb">
+                                        <rect key="frame" x="81.5" y="295.5" width="192" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="掃描場所QR Code"/>
+                                        <connections>
+                                            <segue destination="kB0-yL-yB5" kind="show" id="dJy-rz-xtK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p2p-VI-3cC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e3O-VK-lEC" firstAttribute="top" secondItem="p2p-VI-3cC" secondAttribute="top" constant="25" id="WNJ-cD-taf"/>
+                            <constraint firstItem="p2p-VI-3cC" firstAttribute="trailing" secondItem="e3O-VK-lEC" secondAttribute="trailing" constant="10" id="epe-n6-cgt"/>
+                            <constraint firstItem="e3O-VK-lEC" firstAttribute="leading" secondItem="p2p-VI-3cC" secondAttribute="leading" constant="10" id="rmp-Aa-RRg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新增場所" id="NV1-Nc-2DF">
+                        <barButtonItem key="rightBarButtonItem" title="儲存" style="plain" id="VdL-TV-Zc7">
+                            <connections>
+                                <action selector="savePlaceNum:" destination="l9p-8z-d9g" id="Aml-2z-f6j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="placeTitleTextField" destination="yoz-pn-CnX" id="M6l-Lc-qJm"/>
+                        <outlet property="scanDataTextView" destination="TU0-GO-dvs" id="t21-WT-ePD"/>
+                        <segue destination="AXH-PM-V0c" kind="unwind" identifier="goBackPlaceListSegue" unwindAction="unwindToPlaceList:" id="QgG-aF-TsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNj-Jg-Fcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AXH-PM-V0c" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1973.5999999999999" y="131.78410794602701"/>
+        </scene>
+        <!--請掃描QRCode-->
+        <scene sceneID="lQA-fM-fXn">
+            <objects>
+                <viewController id="kB0-yL-yB5" customClass="ScanPlaceNumberViewController" customModule="SMS2CDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gAq-nN-ZCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QH-b2-rrF">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請掃描店家提供之CDC QRCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-gw-RUn">
+                                        <rect key="frame" x="59.5" y="14.5" width="256.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="c2t-gw-RUn" firstAttribute="centerX" secondItem="6QH-b2-rrF" secondAttribute="centerX" id="LW7-EV-zJE"/>
+                                    <constraint firstItem="c2t-gw-RUn" firstAttribute="centerY" secondItem="6QH-b2-rrF" secondAttribute="centerY" id="N5R-WE-A5E"/>
+                                    <constraint firstAttribute="height" constant="50" id="W2t-uM-bVw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JfM-e9-CiT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6QH-b2-rrF" firstAttribute="leading" secondItem="JfM-e9-CiT" secondAttribute="leading" id="Wdk-BW-Ozt"/>
+                            <constraint firstItem="JfM-e9-CiT" firstAttribute="bottom" secondItem="6QH-b2-rrF" secondAttribute="bottom" id="akS-dO-LdZ"/>
+                            <constraint firstItem="6QH-b2-rrF" firstAttribute="trailing" secondItem="JfM-e9-CiT" secondAttribute="trailing" id="kB9-jp-WyR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="請掃描QRCode" id="JaW-nQ-IjE"/>
+                    <connections>
+                        <outlet property="btmBarView" destination="6QH-b2-rrF" id="obC-bO-hkp"/>
+                        <segue destination="1am-O2-ajb" kind="unwind" identifier="goBackAddPlaceSegue" unwindAction="unwindBack:" id="6Tv-C2-hHx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnm-8j-AgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1am-O2-ajb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2901.5999999999999" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iUW-S9-UhA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bcJ-3b-6AL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l64-Ee-aSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xQ3-Za-81X" kind="relationship" relationship="rootViewController" id="x93-sb-m6l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wp-Vu-mvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

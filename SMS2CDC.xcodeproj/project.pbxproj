@@ -16,6 +16,11 @@
 		BE01CB902658FF090011EC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE01CB8E2658FF090011EC40 /* LaunchScreen.storyboard */; };
 		BE01CB9B2658FF0A0011EC40 /* SMS2CDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CB9A2658FF0A0011EC40 /* SMS2CDCTests.swift */; };
 		BE01CBA62658FF0A0011EC40 /* SMS2CDCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBA52658FF0A0011EC40 /* SMS2CDCUITests.swift */; };
+		BE01CBB4265905DC0011EC40 /* AddNewPlaceControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBB3265905DC0011EC40 /* AddNewPlaceControllerViewController.swift */; };
+		BE01CBB8265934990011EC40 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBB7265934990011EC40 /* Place.swift */; };
+		BE01CBBD265957DD0011EC40 /* PlaceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBBC265957DD0011EC40 /* PlaceListTableViewController.swift */; };
+		BE01CBBF26595BA10011EC40 /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */; };
+		BE01CBC1265966370011EC40 /* ScanPlaceNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		BE01CB7D2658FF070011EC40 /* SMS2CDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMS2CDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE01CB802658FF070011EC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE01CB822658FF070011EC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE01CB842658FF070011EC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE01CB842658FF070011EC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		BE01CB872658FF070011EC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE01CB8A2658FF070011EC40 /* SMS2CDC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SMS2CDC.xcdatamodel; sourceTree = "<group>"; };
 		BE01CB8C2658FF090011EC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		BE01CBA12658FF0A0011EC40 /* SMS2CDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMS2CDCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE01CBA52658FF0A0011EC40 /* SMS2CDCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMS2CDCUITests.swift; sourceTree = "<group>"; };
 		BE01CBA72658FF0A0011EC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE01CBB3265905DC0011EC40 /* AddNewPlaceControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceControllerViewController.swift; sourceTree = "<group>"; };
+		BE01CBB7265934990011EC40 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		BE01CBBC265957DD0011EC40 /* PlaceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewController.swift; sourceTree = "<group>"; };
+		BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
+		BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPlaceNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,11 @@
 				BE01CB8E2658FF090011EC40 /* LaunchScreen.storyboard */,
 				BE01CB912658FF090011EC40 /* Info.plist */,
 				BE01CB892658FF070011EC40 /* SMS2CDC.xcdatamodeld */,
+				BE01CBB3265905DC0011EC40 /* AddNewPlaceControllerViewController.swift */,
+				BE01CBB7265934990011EC40 /* Place.swift */,
+				BE01CBBC265957DD0011EC40 /* PlaceListTableViewController.swift */,
+				BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */,
+				BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */,
 			);
 			path = SMS2CDC;
 			sourceTree = "<group>";
@@ -261,10 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE01CBB4265905DC0011EC40 /* AddNewPlaceControllerViewController.swift in Sources */,
 				BE01CB852658FF070011EC40 /* ViewController.swift in Sources */,
 				BE01CB812658FF070011EC40 /* AppDelegate.swift in Sources */,
+				BE01CBC1265966370011EC40 /* ScanPlaceNumberViewController.swift in Sources */,
+				BE01CBBF26595BA10011EC40 /* PlaceListTableViewCell.swift in Sources */,
+				BE01CBB8265934990011EC40 /* Place.swift in Sources */,
 				BE01CB832658FF070011EC40 /* SceneDelegate.swift in Sources */,
 				BE01CB8B2658FF070011EC40 /* SMS2CDC.xcdatamodeld in Sources */,
+				BE01CBBD265957DD0011EC40 /* PlaceListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DR6QZ9TL24;
 				INFOPLIST_FILE = SMS2CDC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DR6QZ9TL24;
 				INFOPLIST_FILE = SMS2CDC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lab.andy.SMS2CDC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
