@@ -103,18 +103,17 @@ class ScanPlaceNumberViewController: UIViewController, AVCaptureMetadataOutputOb
             //取得條碼訊息
             if metadataObj.stringValue != nil {
                 
-                dataPassed = metadataObj.stringValue
-                
-                let separated = "SMSTO:1922:"
-                let separatedStr = metadataObj.stringValue?.components(separatedBy: separated)
-                
-                dataPassed = separatedStr?[1]
-                //"SMSTO:1922:場所代碼：2374 6656 3758 073\n本次簡訊實聯限防疫目的使用。"
                 //取得掃描資訊
-                performSegue(withIdentifier: "goBackAddPlaceSegue", sender: nil)
+                let scanStr = metadataObj.stringValue?.uppercased()
+                let separated = "SMSTO:1922:"
+                let separatedStr = scanStr?.components(separatedBy: separated)
+                if separatedStr?.count ?? 1 < 2 {
+                    dataPassed = ""
+                } else {
+                    dataPassed = separatedStr?[1]
+                }
                 
-
-
+                performSegue(withIdentifier: "goBackAddPlaceSegue", sender: nil)
             }
         }
     }
