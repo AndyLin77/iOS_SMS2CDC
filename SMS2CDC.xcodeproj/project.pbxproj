@@ -21,7 +21,6 @@
 		BE01CBBD265957DD0011EC40 /* PlaceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBBC265957DD0011EC40 /* PlaceListTableViewController.swift */; };
 		BE01CBBF26595BA10011EC40 /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */; };
 		BE01CBC1265966370011EC40 /* ScanPlaceNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */; };
-		BE51EF19265C0C1500CEEB6F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE51EF18265C0C1500CEEB6F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		BE01CBBC265957DD0011EC40 /* PlaceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewController.swift; sourceTree = "<group>"; };
 		BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
 		BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPlaceNumberViewController.swift; sourceTree = "<group>"; };
-		BE51EF18265C0C1500CEEB6F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../Downloads/iOS_SMS2CDC-Dev/README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 		BE01CB742658FF070011EC40 = {
 			isa = PBXGroup;
 			children = (
-				BE51EF18265C0C1500CEEB6F /* README.md */,
 				BE01CB7F2658FF070011EC40 /* SMS2CDC */,
 				BE01CB992658FF0A0011EC40 /* SMS2CDCTests */,
 				BE01CBA42658FF0A0011EC40 /* SMS2CDCUITests */,
@@ -254,7 +251,6 @@
 			files = (
 				BE01CB902658FF090011EC40 /* LaunchScreen.storyboard in Resources */,
 				BE01CB8D2658FF090011EC40 /* Assets.xcassets in Resources */,
-				BE51EF19265C0C1500CEEB6F /* README.md in Resources */,
 				BE01CB882658FF070011EC40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
