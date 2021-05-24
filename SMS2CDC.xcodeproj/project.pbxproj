@@ -22,7 +22,6 @@
 		BE01CBBF26595BA10011EC40 /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */; };
 		BE01CBC1265966370011EC40 /* ScanPlaceNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */; };
 		BE51EF10265C088000CEEB6F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE51EF0F265C088000CEEB6F /* README.md */; };
-		BE51EF12265C090000CEEB6F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE51EF11265C090000CEEB6F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		BE01CBBE26595BA10011EC40 /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
 		BE01CBC0265966370011EC40 /* ScanPlaceNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPlaceNumberViewController.swift; sourceTree = "<group>"; };
 		BE51EF0F265C088000CEEB6F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../Downloads/iOS_SMS2CDC-main/README.md"; sourceTree = "<group>"; };
-		BE51EF11265C090000CEEB6F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../Downloads/iOS_SMS2CDC-Dev/README.md"; sourceTree = "<group>"; };
 		BE51EF13265C091600CEEB6F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../Downloads/iOS_SMS2CDC-main/README.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +94,6 @@
 		BE01CB742658FF070011EC40 = {
 			isa = PBXGroup;
 			children = (
-				BE51EF11265C090000CEEB6F /* README.md */,
 				BE51EF13265C091600CEEB6F /* README.md */,
 				BE01CB7F2658FF070011EC40 /* SMS2CDC */,
 				BE01CB992658FF0A0011EC40 /* SMS2CDCTests */,
@@ -259,7 +256,6 @@
 			files = (
 				BE01CB902658FF090011EC40 /* LaunchScreen.storyboard in Resources */,
 				BE01CB8D2658FF090011EC40 /* Assets.xcassets in Resources */,
-				BE51EF12265C090000CEEB6F /* README.md in Resources */,
 				BE51EF10265C088000CEEB6F /* README.md in Resources */,
 				BE01CB882658FF070011EC40 /* Main.storyboard in Resources */,
 			);
