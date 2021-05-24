@@ -103,6 +103,15 @@ class AddNewPlaceControllerViewController: UIViewController, UITextFieldDelegate
     @IBAction func unwindBack(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source as? ScanPlaceNumberViewController
         scanDataTextView.text = sourceViewController?.dataPassed
+//        if sourceViewController?.dataPassed == "" {
+//            let optionMenu = UIAlertController(title: "QRCode 錯誤", message: "請掃描取店家提供之CDC實聯制QRCode", preferredStyle: .alert)
+//            let cancelAction = UIAlertAction(title: "確定", style: .cancel, handler: nil)
+//            optionMenu.addAction(cancelAction)
+//            self.present(optionMenu, animated: true, completion: nil)
+//        } else {
+//
+//        }
+        
         // Use data from the view controller which initiated the unwind segue
         
         
